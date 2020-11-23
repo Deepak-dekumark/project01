@@ -13,6 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>MovieBookingApplication</name>
 	<description>RestFul API for Movie Booking Application </description>
+<!--	<packaging>war</packaging>-->
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -31,7 +32,7 @@
 <!--			</exclusions>-->
 		</dependency>
 
-<!--		&lt;!&ndash;Use jetty Instead &ndash;&gt;-->
+<!--		Use jetty Instead -->
 <!--		<dependency>-->
 <!--			<groupId>org.springframework.boot</groupId>-->
 <!--			<artifactId>spring-boot-starter-jetty</artifactId>-->
@@ -46,6 +47,24 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+    <!--In memory database-->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+<!--     SpringBoot Deployment Option using War -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
 		</dependency>
 
 
